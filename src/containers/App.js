@@ -44,6 +44,6 @@ class App extends Component { //this is a state, used to communicate between chi
       );
     }
   }
-// }
+}
 
 export default App;
