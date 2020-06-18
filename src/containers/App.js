@@ -29,10 +29,10 @@ class App extends Component { //this is a state, used to communicate between chi
     const filteredRobots = robots.filter(robots => { //we are receiving properties here from the parent
       return robots.name.toLowerCase().includes(searchfield.toLowerCase());
     })
-    // if (!robots.length){
-    //   return <h1>Loading</h1>
-    // }
-    // else{
+    if (!robots.length){
+      return <h1>Loading</h1>
+    }
+    else{
       return(
         <div className = 'tc'>
           <h1 className='f1'>robofriends</h1>
